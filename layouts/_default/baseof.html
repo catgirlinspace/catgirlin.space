@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>{{ block "title" . }}
+      {{ .Site.Title }}
+    {{ end }}</title>
+
+    {{ $css := resources.Get "css/main.css" }}
+    {{ $style := $css | resources.PostCSS }}
+    <link rel="stylesheet" href="{{ $style.Permalink }}">
+  </head>
+  <body class="bg-slate-100 dark:bg-slate-900 text-slate-900 dark:text-slate-50">
+    {{ block "main" . }}
+    {{ end }}
+
+    {{ block "footer" . }}
+    {{ end }}
+  </body>
+</html>
