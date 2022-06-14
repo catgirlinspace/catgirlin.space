@@ -927,8 +927,11 @@ video {
 .grid {
   display: grid;
 }
-.h-20 {
-  height: 5rem;
+.aspect-auto {
+  aspect-ratio: auto;
+}
+.max-h-36 {
+  max-height: 9rem;
 }
 .max-h-64 {
   max-height: 16rem;
@@ -950,6 +953,9 @@ video {
 }
 .rounded-2xl {
   border-radius: 1rem;
+}
+.rounded-lg {
+  border-radius: 0.5rem;
 }
 .rounded {
   border-radius: 0.25rem;
