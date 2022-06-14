@@ -1,7 +1,6 @@
 ---
 title: "script assets"
 summary: "preview roblox assets used within scripts"
-card_image: ""
 card_image_alt: ""
 ---
 

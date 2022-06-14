@@ -1,7 +1,6 @@
 ---
 title: "avatar editor"
 summary: "simple and easy to integrate avatar editor"
-card_image: ""
 card_image_alt: "screenshot of avatar editor"
 ---
 
