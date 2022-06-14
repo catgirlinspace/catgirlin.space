@@ -960,9 +960,9 @@ video {
 .rounded {
   border-radius: 0.25rem;
 }
-.bg-purple-500 {
+.bg-purple-600 {
   --tw-bg-opacity: 1;
-  background-color: rgb(168 85 247 / var(--tw-bg-opacity));
+  background-color: rgb(147 51 234 / var(--tw-bg-opacity));
 }
 .bg-slate-100 {
   --tw-bg-opacity: 1;
@@ -1007,9 +1007,9 @@ video {
 .font-semibold {
   font-weight: 600;
 }
-.text-slate-50 {
+.text-white {
   --tw-text-opacity: 1;
-  color: rgb(248 250 252 / var(--tw-text-opacity));
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 .text-slate-900 {
   --tw-text-opacity: 1;
