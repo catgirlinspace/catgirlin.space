@@ -1,0 +1,8 @@
+{{ $name := .Get 0 }}
+{{ $size := .Get 1 }}
+
+{{ with .Page.Resources.GetMatch $name }}
+{{ with .Resize $size }}
+<img src="{{ .Permalink }}" alt="{{ $.Params.alt }}" {{ with $.Params.class }}class="{{ . }}"{{ else }}class="max-h-80 rounded-lg"{{ end }}>
+{{ end }}
+{{ end }}
