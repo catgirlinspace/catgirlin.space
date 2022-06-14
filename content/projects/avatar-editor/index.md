@@ -8,4 +8,5 @@ in late 2021 i made a little avatar editor on roblox using the `avatareditorserv
 
 ## screenshots
 
-![thing](avatar-editor.png)
+![screenshot showing the avatar editor with the featured tab of the avatar shop displayed](cover.png)
+![the avatar editor orb in the rising sea](metauni.png "avatar editor orb in the rising sea")
