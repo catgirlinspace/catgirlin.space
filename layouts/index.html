@@ -1,7 +1,7 @@
 {{ define "main" }}
     <main aria-role="main">
       <div class="bg-purple-500 text-slate-50">
-        <div class="md:container mx-auto py-12 px-4">
+        <div class="md:container py-12">
           <h1 class="text-3xl font-bold underline">{{.Title}}</h1>
           {{ with .Params.subtitle }}
           <span class="text-2xl font-bold">{{.}}</span>
@@ -10,10 +10,10 @@
           {{.Content}}
         </div>
       </div>
-      <div class="md:container mx-auto px-4">
+      <div class="md:container pt-4">
         <h2 class="text-xl font-bold">projects</h2>
-        {{ $pages := where site.RegularPages "Type" "project" }}
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 p-4">
+          {{ $pages := where site.RegularPages "Type" "projects" }}
           {{ range $pages }}
               {{ .Render "card"}}
           {{ end }}

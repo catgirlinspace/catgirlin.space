@@ -1,0 +1,10 @@
+{{ define "main" }}
+<section class="container">
+  <h1 class="text-3xl font-bold underline">{{ .Title }}</h1>
+  <div class="pt-4">
+        <article class="prose md:prose-lg prose-slate max-w-none dark:prose-invert prose-a:text-blue-600 dark:prose-a:text-blue-400">
+           {{ .Content }}
+        </article>
+  </div>
+</section>
+{{ end }}

@@ -6,3 +6,7 @@ card_image_alt: "screenshot of avatar editor"
 ---
 
 in late 2021 i made a little avatar editor on roblox using the `avatareditorservice`. currently it's in use for some [metauni](https://metauni.org) experiences.
+
+## screenshots
+
+![thing](avatar.jpeg)
