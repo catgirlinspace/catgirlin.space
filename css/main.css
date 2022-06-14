@@ -924,6 +924,9 @@ video {
 .block {
   display: block;
 }
+.flex {
+  display: flex;
+}
 .grid {
   display: grid;
 }
