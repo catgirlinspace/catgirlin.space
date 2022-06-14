@@ -9,4 +9,4 @@ in late 2021 i made a little avatar editor on roblox using the `avatareditorserv
 
 ## screenshots
 
-![thing](avatar.jpeg)
+![thing](avatar-editor.png)
