@@ -10,6 +10,9 @@
     {{ $css := resources.Get "css/main.css" }}
     {{ $style := $css | resources.PostCSS }}
     <link rel="stylesheet" href="{{ $style.Permalink }}">
+
+    {{ template "_internal/opengraph.html" . }}
+    {{ template "_internal/twitter_cards.html" . }}
   </head>
   <body class="bg-slate-100 dark:bg-slate-900 text-slate-900 dark:text-slate-50">
     {{ block "main" . }}
