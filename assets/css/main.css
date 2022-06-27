@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .glitch {
-    mask-image: linear-gradient(to bottom, black 0%, transparent 0% 20%, black 20% 100%);
+    mask-image: linear-gradient(to bottom, black 0%, transparent 0% 10%, black 10% 100%);
     animation: glitch 1s infinite linear;
 }
 
