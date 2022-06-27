@@ -4,8 +4,9 @@
 
 @layer utilities {
     .glitch {
-        mask-image: linear-gradient(to bottom, black 0%, transparent 0% 10%, black 10% 100%);
-        animation: glitch 1s infinite linear;
+        mask-image: linear-gradient(to bottom, black 0%, transparent 0% 30%, black 30% 100%);
+        mask-size: auto 50%;
+        animation: glitch 1s infinite cubic-bezier(.9, 0, .1, 1);
     }
     
     @keyframes glitch {
@@ -21,7 +22,7 @@
         75% {
             mask-position: 0% 40%;
         }
-        80% {
+        85% {
             mask-position: 0% 70%;
         }
         100% {
