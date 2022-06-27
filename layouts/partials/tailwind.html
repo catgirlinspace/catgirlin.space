@@ -1,0 +1,17 @@
+{{ if .Site.IsServer }}
+    {{ $seed := "weqklrjfmnk213409ufasdfhnlk3j4bladsfsl" }}
+    {{ $random := delimit (shuffle (split (md5 $seed) "" )) "" }}
+    {{
+    $style := resources.Get "css/main.css"
+    | resources.PostCSS
+    | resources.ExecuteAsTemplate (printf "tailwind.dev.%s.css" $random) $random
+    }}
+    <link rel="stylesheet" href="{{ $style.RelPermalink }}">
+{{ else }}
+    {{
+    $style := resources.Get "css/main.css"
+        | resources.PostCSS
+        | resources.Minify
+    }}
+    <link rel="stylesheet" href="{{ $style.RelPermalink }}">
+{{ end }}
