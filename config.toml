@@ -2,3 +2,8 @@ baseURL = 'https://phoebeivy.dev/'
 languageCode = 'en-us'
 title = 'phoebe'
 enableEmoji = true
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = false

@@ -1,5 +1,5 @@
-{{ $name := .Get 0 }}
-{{ $size := .Get 1 }}
+{{ $name := .Params.src }}
+{{ $size := .Params.size }}
 
 {{ with .Page.Resources.GetMatch $name }}
 {{ with .Resize $size }}
