@@ -2,28 +2,30 @@
 @tailwind components;
 @tailwind utilities;
 
-.glitch {
-    mask-image: linear-gradient(to bottom, black 0%, transparent 0% 10%, black 10% 100%);
-    animation: glitch 1s infinite linear;
-}
-
-@keyframes glitch {
-    0% {
-        mask-position: 0% 0%;
+@layer utilities {
+    .glitch {
+        mask-image: linear-gradient(to bottom, black 0%, transparent 0% 10%, black 10% 100%);
+        animation: glitch 1s infinite linear;
     }
-    25% {
-        mask-position: 0% 20%;
-    }
-    50% {
-        mask-position: 0% 50%;
-    }
-    75% {
-        mask-position: 0% 40%;
-    }
-    80% {
-        mask-position: 0% 70%;
-    }
-    100% {
-        mask-position: 0% 0%;
+    
+    @keyframes glitch {
+        0% {
+            mask-position: 0% 0%;
+        }
+        25% {
+            mask-position: 0% 20%;
+        }
+        50% {
+            mask-position: 0% 50%;
+        }
+        75% {
+            mask-position: 0% 40%;
+        }
+        80% {
+            mask-position: 0% 70%;
+        }
+        100% {
+            mask-position: 0% 0%;
+        }
     }
 }
