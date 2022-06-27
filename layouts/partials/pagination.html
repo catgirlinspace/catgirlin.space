@@ -1,0 +1,31 @@
+<div class="flex gap-4 justify-center pt-4">
+    {{$currentPageNumber := .PageNumber }}
+
+    {{ with .First }}
+    {{ if ne $currentPageNumber .PageNumber }}
+    <a href="{{ .URL }}" class="bg-purple-300 dark:bg-purple-900 rounded-lg shadow hover:shadow-lg transition p-4">&lt;&lt;</a>
+    {{ end}}
+    {{ end }}
+
+    {{ with .Prev }}
+    <a href="{{ .URL }}" class="bg-purple-300 dark:bg-purple-900 rounded-lg shadow hover:shadow-lg transition p-4">&lt;</a>
+    {{ end }}
+
+    {{ range .Pagers }}
+    {{ if eq $currentPageNumber .PageNumber }}
+    <a href="{{ .URL }}" class="bg-purple-500 dark:bg-purple-700 rounded-lg shadow hover:shadow-lg transition p-4">{{ .PageNumber }}</a>
+    {{ else }}
+    <a href="{{ .URL }}" class="bg-purple-300 dark:bg-purple-900 rounded-lg shadow hover:shadow-lg transition p-4">{{ .PageNumber }}</a>
+    {{ end }}
+    {{ end }}
+
+    {{ with .Next }}
+    <a href="{{ .URL }}" class="bg-purple-300 dark:bg-purple-900 rounded-lg shadow hover:shadow-lg transition p-4">&gt;</a>
+    {{ end }}
+
+    {{ with .Last }}
+    {{ if ne $currentPageNumber .PageNumber }}
+    <a href="{{ .URL }}" class="bg-purple-300 dark:bg-purple-900 rounded-lg shadow hover:shadow-lg transition p-4">&gt;&gt;</a>
+    {{ end }}
+    {{ end }}
+</div>

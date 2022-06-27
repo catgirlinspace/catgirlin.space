@@ -1,0 +1,27 @@
+<a href="{{ .Permalink }}" class="bg-purple-200 dark:bg-slate-800 rounded-2xl shadow hover:shadow-xl transition p-8 origin-center transform-gpu hover:rotate-1">
+    {{ with .Resources.GetMatch "cover.*" }}
+    {{ with .Resize "x288 webp" }}
+    <img src="{{ .Permalink }}" alt="{{ .Params.card_image_alt }}" class="max-h-36 rounded-lg aspect-auto">
+    {{ end }}
+    {{ end }}
+    <span class="text-xl font-semibold">
+        {{ .Title }}
+    </span>
+
+    <div class="font-light text-sm">
+        {{ .PublishDate | time.Format ":date_long" }}
+    </div>
+
+    <div class="font-light text-sm">
+        {{ .ReadingTime }}
+        {{ if eq .ReadingTime 1 }}
+        minute
+        {{ else }}
+        minutes
+        {{ end }}
+    </div>
+
+    <p class="text-lg">
+        {{ .Summary }}
+    </p>
+</a>
