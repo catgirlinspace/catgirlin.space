@@ -6,7 +6,7 @@
     .glitch {
         mask-image: linear-gradient(to bottom, black 0%, transparent 0% 30%, black 30% 100%);
         mask-size: auto 50%;
-        animation: glitch 1s infinite cubic-bezier(.9, 0, .1, 1);
+        animation: glitch 1s infinite cubic-bezier(.8, 0, .2, 1);
     }
     
     @keyframes glitch {
