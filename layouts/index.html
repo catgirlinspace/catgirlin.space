@@ -15,7 +15,15 @@
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 p-4">
           {{ $pages := where site.RegularPages "Type" "projects" }}
           {{ range $pages }}
-              {{ .Render "card"}}
+              {{ .Render "card" }}
+          {{ end }}
+        </div>
+
+        <h2 class="text-xl font-bold">recent posts</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 p-4">
+          {{ $pages := where site.RegularPages "Type" "posts" }}
+          {{ range first 3 $pages }}
+              {{ .Render "card" }}
           {{ end }}
         </div>
       </div>
