@@ -4,6 +4,9 @@ title = 'phoebe'
 enableEmoji = true
 enableRobotsTXT = true
 
+[params]
+  description = "trans girl making little projects"
+
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]

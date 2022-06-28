@@ -7,6 +7,8 @@
       {{ .Site.Title }}
     {{ end }}</title>
 
+    <meta name="description" content="{{ if .IsHome }}{{ $.Site.Params.description }}{{ else }}{{ .Description }}{{ end }}" />
+
     {{ partialCached "tailwind.html" . }}
 
     {{ template "_internal/opengraph.html" . }}
