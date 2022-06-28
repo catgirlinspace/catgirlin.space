@@ -2,12 +2,10 @@
 <main>
   <div class="bg-purple-600 text-white">
     <div class="md:container py-12">
-      <h1 class="text-3xl font-bold underline">{{.Title}}</h1>
-      {{ with .Params.subtitle }}
-      <span class="text-2xl font-bold">{{.}}</span>
-      {{ end }}
+      <h1 class="text-3xl font-bold underline">hii!! i'm phoebe!!</h1>
+      <span class="text-2xl font-bold">she/it</span>
 
-      <div class="flex flex-wrap gap-4">
+      <div class="flex flex-wrap gap-4 py-4">
         <a href="https://github.com/phoebethewitch" class="bg-purple-900 rounded-lg p-4" target="_blank">
           <svg class="inline h-8 w-8 stroke-white fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
             <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
@@ -49,7 +47,7 @@
     </div>
   </div>
   <div class="md:container pt-4">
-    <h2 class="text-xl font-bold">projects</h2>
+    <h2 class="text-2xl font-bold">projects</h2>
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 p-4">
       {{ $pages := where site.RegularPages "Type" "projects" }}
       {{ range $pages }}
@@ -57,7 +55,7 @@
       {{ end }}
     </div>
 
-    <h2 class="text-xl font-bold">recent posts</h2>
+    <h2 class="text-2xl font-bold">recent posts</h2>
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 p-4">
       {{ $pages := where site.RegularPages "Type" "posts" }}
       {{ range first 3 $pages }}
