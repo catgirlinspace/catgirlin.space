@@ -1,5 +1,5 @@
 {{ $name := .Params.src }}
-{{ $size := .Params.size }}
+{{ $size := printf "%s %s" .Params.size "webp" }}
 
 {{ with .Page.Resources.GetMatch $name }}
 {{ with .Resize $size }}
