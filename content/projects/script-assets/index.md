@@ -10,8 +10,8 @@ script assets is available on [itch.io](https://phoebethewitch.itch.io/script-as
 
 ## screenshots
 
-<div class="flex flex-wrap gap-4">
+{{< flex >}}
 {{< img src="promo1.png" size="x640" alt="2 audios assets are displayed" class="rounded-lg max-h-80" >}}
 {{< img src="promo2.png" size="x640" alt="2 3d models are displayed, a tree and a trampoline" class="rounded-lg max-h-80" >}}
 {{< img src="promo3.png" size="x640" alt="a video asset is displayed" class="rounded-lg max-h-80" >}}
-</div>
+{{</ flex >}}
