@@ -13,6 +13,10 @@
 
     {{ template "_internal/opengraph.html" . }}
     {{ template "_internal/twitter_cards.html" . }}
+
+    {{ range .AlternativeOutputFormats -}}
+      {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
+  {{ end -}}
   </head>
   <body class="bg-purple-100 dark:bg-slate-900 text-slate-900 dark:text-purple-50">
     {{ partial "navbar.html" . }}
