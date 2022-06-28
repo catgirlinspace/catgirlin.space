@@ -7,6 +7,9 @@ enableRobotsTXT = true
 [params]
   description = "trans girl making little projects"
 
+[social]
+twitter = "cutewitchphoebe"
+
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]
