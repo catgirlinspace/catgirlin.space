@@ -7,7 +7,7 @@
       {{ .Site.Title }}
     {{ end }}</title>
 
-    {{ partial "tailwind.html" . }}
+    {{ partialCached "tailwind.html" . }}
 
     {{ template "_internal/opengraph.html" . }}
     {{ template "_internal/twitter_cards.html" . }}
