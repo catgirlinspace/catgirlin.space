@@ -19,3 +19,7 @@ in june 2022 i worked with [ethan](https://ecurtiss.dev) to automate schedules f
 {{< img src="board.png" size="x512" alt="schedule board in roblox" class="rounded-lg max-h-64" >}}
 {{< img src="hover.png" size="x512" alt="hovering over an event title" class="rounded-lg max-h-64" >}}
 </div>
+
+## calendar feed for schedule
+
+with the new automated schedules implemented, i later went back to implement an icalendar feed. i use a python script and the `ics` python library to generate this. 
