@@ -1,0 +1,26 @@
+{{ $data := getJSON "https://webmention.io/api/mentions.jf2?target=" .Permalink }}
+
+<div class="italic">
+    {{ len $data.children }} webmentions
+</div>
+
+{{ range $data.children }}
+<div class="rounded-lg p-4 my-2 bg-purple-100 dark:bg-slate-800 shadow-lg">
+    <a href="{{ .author.url }}" rel="nofollow noopener external" target="_blank" class="block">
+        <img src="{{ .author.photo }}" alt="{{ .author.name }}" class="inline rounded-lg h-8 aspect-square">
+        {{ .author.name }}
+    </a>
+
+    <a href="{{ .url }}" class="block pl-8">
+    {{ with .published }}
+    <time datetime="{{ . }}">{{ . | time.Format ":date_long" }}</time>
+    {{ else }}
+    <time datetime="{{ index . "wm-received" }}">{{ index . "wm-received" | time.Format ":date_long" }}</time>
+    {{ end }}
+    </a>
+
+    <div>
+        {{ .content.text}}
+    </div>
+</div>
+{{ end }}
