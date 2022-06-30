@@ -1,0 +1,64 @@
+
+
+.glitch {
+    -webkit-mask-image: linear-gradient(to bottom, black 0%, transparent 0% 20%, black 20% 100%);
+            mask-image: linear-gradient(to bottom, black 0%, transparent 0% 20%, black 20% 100%);
+    -webkit-mask-size: cover;
+            mask-size: cover;
+    -webkit-animation: glitch 1s infinite linear;
+            animation: glitch 1s infinite linear;
+}
+
+@-webkit-keyframes glitch {
+    0% {
+        -webkit-mask-position: 0% 0%;
+                mask-position: 0% 0%;
+    }
+    25% {
+        -webkit-mask-position: 0% 20%;
+                mask-position: 0% 20%;
+    }
+    50% {
+        -webkit-mask-position: 0% 50%;
+                mask-position: 0% 50%;
+    }
+    75% {
+        -webkit-mask-position: 0% 40%;
+                mask-position: 0% 40%;
+    }
+    80% {
+        -webkit-mask-position: 0% 70%;
+                mask-position: 0% 70%;
+    }
+    100% {
+        -webkit-mask-position: 0% 0%;
+                mask-position: 0% 0%;
+    }
+}
+
+@keyframes glitch {
+    0% {
+        -webkit-mask-position: 0% 0%;
+                mask-position: 0% 0%;
+    }
+    25% {
+        -webkit-mask-position: 0% 20%;
+                mask-position: 0% 20%;
+    }
+    50% {
+        -webkit-mask-position: 0% 50%;
+                mask-position: 0% 50%;
+    }
+    75% {
+        -webkit-mask-position: 0% 40%;
+                mask-position: 0% 40%;
+    }
+    80% {
+        -webkit-mask-position: 0% 70%;
+                mask-position: 0% 70%;
+    }
+    100% {
+        -webkit-mask-position: 0% 0%;
+                mask-position: 0% 0%;
+    }
+}
