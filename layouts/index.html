@@ -55,8 +55,8 @@
         </div>
 
         {{ with resources.GetMatch "pfp.png" }}
-        {{ with .Resize "x320 webp" }}
-        <img src="{{ .Permalink }}" alt="phoebe" class="rounded-full max-h-40 border-8 border-purple-400 mx-auto u-photo">
+        {{ with .Resize "x320 webp icon" }}
+        <img src="{{ .Permalink }}" alt="phoebe" class="rounded-full max-h-40 shadow hover:shadow-lg hover:scale-125 transition border-8 border-purple-400 mx-auto u-photo">
         {{ end }}
         {{ end }}
       </div>
