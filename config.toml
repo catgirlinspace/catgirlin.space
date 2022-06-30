@@ -6,6 +6,7 @@ enableRobotsTXT = true
 
 [params]
   description = "trans girl making little projects"
+  images = [ "favicon.png" ]
 
 [social]
 twitter = "cutewitchphoebe"
