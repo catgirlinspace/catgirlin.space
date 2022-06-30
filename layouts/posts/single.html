@@ -3,7 +3,7 @@
 {{ end }}
 
 {{ define "main" }}
-<article class="container">
+<article class="container h-entry">
     <h1 class="text-3xl font-bold underline py-4 p-name">{{ .Title }}</h1>
 
     <div class="flex flex-wrap gap-x-6 gap-y-2">
@@ -27,8 +27,10 @@
             {{ end }}
         </span>
     </div>
+
+    <span class="hidden p-summary">{{ .Summary }}</span>
     
-    <div class="pt-4 prose md:prose-lg prose-slate max-w-none dark:prose-invert prose-a:text-blue-600 dark:prose-a:text-blue-400">
+    <div class="pt-4 prose md:prose-lg prose-slate max-w-none dark:prose-invert prose-a:text-blue-600 dark:prose-a:text-blue-400 e-content">
         {{ .Content }}
     </div>
 </article>
