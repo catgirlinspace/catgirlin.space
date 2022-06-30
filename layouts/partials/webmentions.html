@@ -20,7 +20,13 @@
     </a>
 
     <div>
-        {{ .content.text}}
+        {{ with .content }}
+        {{ .text }}
+        {{ else }}
+        {{ if eq (index . "wm-property") "like-of" }}
+        liked
+        {{ end }}
+        {{ end }}
     </div>
 </div>
 {{ end }}
