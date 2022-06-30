@@ -30,7 +30,7 @@
   {{ end -}}
   </head>
   <body class="bg-purple-100 dark:bg-slate-900 text-slate-900 dark:text-purple-50">
-    {{ partial "navbar.html" . }}
+    {{ partialCached "navbar.html" . }}
 
     {{ block "main" . }}
     {{ end }}
