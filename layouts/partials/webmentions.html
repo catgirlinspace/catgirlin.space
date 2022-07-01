@@ -30,6 +30,7 @@
             {{ end }}
         </span>
 
+        {{ if ne (index . "wm-property") "repost-of" }}
         {{ with .content }}
         {{ if .html }}
         <div class="prose prose-slate dark:prose-invert max-w-none">
@@ -37,6 +38,7 @@
         </div>
         {{ else }}
         {{ .text }}
+        {{ end }}
         {{ end }}
         {{ end }}
     </div>
