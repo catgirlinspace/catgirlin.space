@@ -1,7 +1,7 @@
 {{ $data := getJSON "https://webmention.io/api/mentions.jf2?target=" .Permalink }}
 
 <div class="italic">
-    {{ len $data.children }} webmentions
+    {{ len $data.children }} webmention{{ if ne (len $data.children) 1 }}s{{ end }}
 </div>
 
 {{ range $data.children }}
@@ -20,10 +20,7 @@
     </a>
 
     <div class="pl-8">
-        {{ with .content }}
-        {{ .text }}
-        {{ else }}
-        <span class="italic text-lg">
+        <span class="block italic text-lg">
             {{ if eq (index . "wm-property") "like-of" }}
             liked
             {{ end }}
@@ -32,6 +29,15 @@
             reposted
             {{ end }}
         </span>
+
+        {{ with .content }}
+        {{ if .html }}
+        <div class="prose prose-slate dark:prose-invert max-w-none">
+            {{ .html | safeHTML }}
+        </div>
+        {{ else }}
+        {{ .text }}
+        {{ end }}
         {{ end }}
     </div>
 </div>
