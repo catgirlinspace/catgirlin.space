@@ -6,12 +6,12 @@
 
 {{ range $data.children }}
 <div class="rounded-lg p-4 my-2 bg-purple-100 dark:bg-slate-800 shadow-lg">
-    <a href="{{ .author.url }}" rel="nofollow noopener external" target="_blank" class="block">
+    <a href="{{ .author.url }}" rel="nofollow noopener external" target="_blank" class="block text-lg">
         <img src="{{ .author.photo }}" alt="{{ .author.name }}" class="inline rounded-lg h-8 aspect-square">
         {{ .author.name }}
     </a>
 
-    <a href="{{ .url }}" class="block pl-8">
+    <a href="{{ .url }}" class="block pl-8 text-lg">
     {{ with .published }}
     <time datetime="{{ . }}">{{ . | time.Format ":date_long" }}</time>
     {{ else }}
