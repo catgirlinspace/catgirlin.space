@@ -23,9 +23,15 @@
         {{ with .content }}
         {{ .text }}
         {{ else }}
-        {{ if eq (index . "wm-property") "like-of" }}
-        liked
-        {{ end }}
+        <span class="italic text-lg">
+            {{ if eq (index . "wm-property") "like-of" }}
+            liked
+            {{ end }}
+
+            {{ if eq (index . "wm-property") "repost-of" }}
+            reposted
+            {{ end }}
+        </span>
         {{ end }}
     </div>
 </div>
