@@ -1,7 +1,7 @@
 {{ define "main" }}
 <main>
   <div class="bg-purple-600 text-white">
-    <div class="md:container py-12 h-card">
+    <div class="container py-12 h-card">
       <span class="hidden">
         <span class="p-gender-identity">girl</span>
         <a href="https://phoebeivy.dev" class="u-url"></a>
@@ -66,7 +66,7 @@
       </div>
     </div>
   </div>
-  <div class="md:container pt-4">
+  <div class="container pt-4">
     <h2 class="text-2xl font-bold">projects</h2>
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 p-4">
       {{ $pages := where site.RegularPages "Type" "projects" }}
