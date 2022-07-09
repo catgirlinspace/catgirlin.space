@@ -2,6 +2,8 @@
 title: "hello world"
 date: 2022-06-30T15:31:08-04:00
 draft: false
+tags:
+- website
 ---
 
 hi! so this website is pretty new. it's been pretty fun to make! i'm still not sure what exactly i'm gonna put here, but so far i have some projects.
