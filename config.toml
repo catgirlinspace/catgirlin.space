@@ -1,6 +1,6 @@
 baseURL = 'https://phoebeivy.dev/'
 languageCode = 'en-us'
-title = 'phoebe/taylor/jade'
+title = 'phoebe'
 enableEmoji = true
 enableRobotsTXT = true
 
