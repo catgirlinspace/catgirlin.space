@@ -51,12 +51,18 @@
               </svg>
               roblox
             </a>
+            <a href="https://splatoon.catgirlin.space/" class="bg-purple-900 rounded-lg p-4 shadow-lg hover:shadow-xl hover:-translate-y-1 hover:-translate-x-1 hover:scale-105 transition" target="_blank">
+              {{ with resources.GetMatch "splatoon-icon.png" }}
+              <img class="inline h-8 w-8 mr-2" src="{{ .Permalink }}" alt="splatoon">
+              {{ end }}
+              splatoon 3 stats
+            </a>
           </div>
         </div>
 
         {{ with resources.GetMatch "pfp.png" }}
         {{ with .Resize "x320 webp icon" }}
-        <img src="{{ .Permalink }}" alt="phoebe" class="rounded-full max-h-40 shadow hover:shadow-lg hover:scale-125 transition border-8 border-purple-400 mx-auto u-photo">
+        <img src="{{ .Permalink }}" alt="pfp" class="rounded-full max-h-40 shadow hover:shadow-lg hover:scale-125 transition border-8 border-purple-400 mx-auto u-photo">
         {{ end }}
         {{ end }}
       </div>
