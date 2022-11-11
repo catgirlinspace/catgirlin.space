@@ -14,6 +14,12 @@
           <span class="text-2xl font-bold">she/it</span>
       
           <div class="flex flex-wrap gap-4 py-4">
+            <a href="https://akkoma.catgirlin.space/catgirl" rel="me" class="bg-purple-900 rounded-lg p-4 shadow-lg hover:shadow-xl hover:-translate-y-1 hover:-translate-x-1 hover:scale-105 transition" target="_blank">
+              {{ with resources.GetMatch "fediverse.svg" }}
+              <img class="inline h-8 w-8 mr-2" src="{{ .Permalink }}" alt="fediverse">
+              {{ end }}
+              fediverse
+            </a>
             <a href="https://github.com/phoebethewitch" class="bg-purple-900 rounded-lg p-4 shadow-lg hover:shadow-xl hover:-translate-y-1 hover:-translate-x-1 hover:scale-105 transition" target="_blank" rel="me">
               <svg class="inline h-8 w-8 mr-2 stroke-white fill-white" xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 496 512">
@@ -37,12 +43,6 @@
                 </g>
               </svg>
               twitter
-            </a>
-            <a href="https://akkoma.catgirlin.space/catgirl" rel="me" class="bg-purple-900 rounded-lg p-4 shadow-lg hover:shadow-xl hover:-translate-y-1 hover:-translate-x-1 hover:scale-105 transition" target="_blank">
-              {{ with resources.GetMatch "fediverse.svg" }}
-              <img class="inline h-8 w-8 mr-2" src="{{ .Permalink }}" alt="fediverse">
-              {{ end }}
-              fediverse
             </a>
             <a href="https://www.roblox.com/users/98916707/profile" class="bg-purple-900 rounded-lg p-4 shadow-lg hover:shadow-xl hover:-translate-y-1 hover:-translate-x-1 hover:scale-105 transition" target="_blank">
               <svg class="inline h-8 w-8 mr-2 stroke-white fill-white" viewBox="0 0 267 267" version="1.1"
